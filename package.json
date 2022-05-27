@@ -1,25 +1,38 @@
 {
   "name": "test",
-  "version": "1.0.0",
-  "description": "",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
-  "source": "src/index.html",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
-    "dev": "parcel --open ",
-    "build": "parcel build --dist-dir=docs"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SHEVEL0V/test.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SHEVEL0V/test/issues"
-  },
-  "homepage": "https://github.com/SHEVEL0V/test#readme",
-  "devDependencies": {
-    "parcel": "^2.4.1"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
